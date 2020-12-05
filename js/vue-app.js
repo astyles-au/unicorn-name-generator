@@ -59,10 +59,162 @@ const app = Vue.component('unicorn-me', {
             ]
 
             let items2 = [
-                'item2'
+                'ambrosial',
+                'appealing',
+                'attractive',
+                'captivating',
+                'charming',
+                'cute',
+                'darling',
+                'dear',
+                'delectable',
+                'delicious',
+                'delightful',
+                'dishy',
+                'dreamy',
+                'fetching',
+                'heavenly',
+                'hot',
+                'luscious',
+                'pleasing',
+                'admirable',
+                'alluring',
+                'angelic',
+                'appealing',
+                'beauteous',
+                'bewitching',
+                'charming',
+                'classy',
+                'comely',
+                'cute',
+                'dazzling',
+                'delicate',
+                'delightful',
+                'divine',
+                'elegant',
+                'enticing',
+                'excellent',
+                'exquisite',
+                'fair',
+                'fascinating',
+                'fine',
+                'foxy',
+                'good-looking',
+                'gorgeous',
+                'graceful',
+                'grand',
+                'handsome',
+                'lovely',
+                'magnificent',
+                'marvelous',
+                'nice',
+                'pleasing',
+                'pretty',
+                'radiant',
+                'ravishing',
+                'refined',
+                'resplendent',
+                'shapely',
+                'sightly',
+                'splendid',
+                'statuesque',
+                'stunning',
+                'sublime',
+                'superb',
+                'symmetrical',
+                'taking',
+                'well-formed',
+                'wonderful',
+                'absorbing',
+                'alluring',
+                'amiable',
+                'appealing',
+                'attractive',
+                'bewitching',
+                'charismatic',
+                'choice',
+                'cute',
+                'dainty',
+                'delectable',
+                'delicate',
+                'delightful',
+                'desirable',
+                'electrifying',
+                'elegant',
+                'enamoring',
+                'engaging',
+                'engrossing',
+                'enthralling',
+                'entrancing',
+                'eye-catching',
+                'fascinating',
+                'fetching',
+                'glamorous',
+                'graceful',
+                'infatuating',
+                'inviting',
+                'irresistible',
+                'likable',
+                'lovable',
+                'lovely',
+                'magnetizing',
+                'pleasant',
+                'pleasing',
+                'provocative',
+                'rapturous',
+                'ravishing',
+                'seducing',
+                'seductive',
+                'sweet',
+                'tantalizing',
+                'tempting',
+                'winsome',
             ]
             let items3 = [
-                'item3'
+                'advocate',
+                'ally',
+                'backer',
+                'challenger',
+                'champ',
+                'conqueror',
+                'defender',
+                'endorser',
+                'exponent',
+                'expounder',
+                'guardian',
+                'hero',
+                'heroine',
+                'medalist',
+                'nonpareil',
+                'number one',
+                'numero uno',
+                'paladin',
+                'partisan',
+                'patron',
+                'proponent',
+                'protector',
+                'supporter',
+                'sympathizer',
+                'the greatest',
+                'upholder',
+                'vanquisher',
+                'victor',
+                'vindicator',
+                'warrior',
+                'adversary',
+                'antagonist',
+                'aspiran',
+                'battler',
+                'challenger',
+                'combatant',
+                'contender',
+                'contester',
+                'dark horse',
+                'disputant',
+                'entrant',
+                'favorite',
+                'hopeful',
+                'rival',
             ]
 
             function randomWords(items) {
@@ -72,7 +224,7 @@ const app = Vue.component('unicorn-me', {
             console.log(randomWords(items2));
             console.log(randomWords(items3));
 
-            let mixItUP = this.nameInput + randomWords(items1) + ' ' + randomWords(items2) + ' ' + randomWords(items3)
+            let mixItUP = this.nameInput + '' + randomWords(items1) + ' the ' + randomWords(items2) + ' ' + randomWords(items3)
             this.nameOutput = mixItUP;
             console.log(this.nameOutput);
         },
@@ -121,6 +273,10 @@ const app = Vue.component('unicorn-me', {
     <h1 id="foo">🦄 {{nameOutput}}</h1>
     <button v-on:click="shareMe" v-show="shareButton">🎉 Share this!</button>
 
+    <button v-on:click="startagain">
+    💡 Make another name!
+    </button>
+
 
     <span class="shareFallback" v-show="shareFallback">
     <!-- Trigger -->
@@ -133,10 +289,6 @@ const app = Vue.component('unicorn-me', {
     <p class="notification green" v-show="nameCopied">
     copied! 😀
     </p>
-
-    <button v-on:click="startagain">
-    💡 Make another name!
-    </button>
     </span>
 
 
