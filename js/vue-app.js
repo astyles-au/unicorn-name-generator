@@ -26,9 +26,54 @@ const app = Vue.component('unicorn-me', {
             this.nameModal = true
 
             // generate random unicorn name based on supplied name
-            let mixItUP = this.nameInput + 'CheeseSparkle'
-            this.nameOutput = mixItUP;
 
+            let items1 = [
+                'Cupcake',
+                'fruitcake',
+                'muffin',
+                'jujubescake',
+                'candycane',
+                'caramel',
+                'dessert',
+                'sesame',
+                'snaps',
+                'Applepie',
+                'lollipop',
+                'croissant',
+                'donut',
+                'cotton',
+                'chocolatejelly',
+                'Biscuit',
+                'sweetbonbon',
+                'marzipan',
+                'Gingerbread',
+                'carrotpie',
+                'soufflé',
+                'sweetcake',
+                'Gummibear',
+                'cookie',
+                'puddingclaw',
+                'caramelssnaps',
+                'tootsieroll',
+                'Gingermacaroon',
+            ]
+
+            let items2 = [
+                'item2'
+            ]
+            let items3 = [
+                'item3'
+            ]
+
+            function randomWords(items) {
+                return items[Math.floor(Math.random() * items.length)];
+            }
+            console.log(randomWords(items1));
+            console.log(randomWords(items2));
+            console.log(randomWords(items3));
+
+            let mixItUP = this.nameInput + randomWords(items1) + ' ' + randomWords(items2) + ' ' + randomWords(items3)
+            this.nameOutput = mixItUP;
             console.log(this.nameOutput);
         },
 
@@ -42,27 +87,27 @@ const app = Vue.component('unicorn-me', {
                     title: 'I have a unicorn name, get your own!',
                     text: 'My Unicorn name is 🦄 ' + this.nameOutput,
                     url: '#'
-                  });
+                });
 
-              } else {
+            } else {
                 // Fallback
                 console.log('You can share your name using copy paste!');
                 this.shareButton = false
                 this.shareFallback = true;
-              }
+            }
         },
 
-        startagain: function() {
+        startagain: function () {
             location.reload();
         },
 
-        nameCopiedNotification: function() {
+        nameCopiedNotification: function () {
             this.nameCopied = true;
         },
 
     },
 
-template: `
+    template: `
     <div style="width: 100%;">
 
     <div v-show="nameInputShow">
