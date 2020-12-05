@@ -238,7 +238,7 @@ const app = Vue.component('unicorn-me', {
                 navigator.share({
                     title: 'I have a unicorn name, get your own!',
                     text: 'My Unicorn name is 🦄 ' + this.nameOutput,
-                    url: '#'
+                    url: 'https://friendly-booth-089be7.netlify.app'
                 });
 
             } else {
