@@ -7,10 +7,11 @@ font-family: 'Roboto', sans-serif;
 */
 
 :root {
-    --big-font: 4rem;
+    --big-font: 5rem;
     --med-font: 3rem;
     --sml-font: 2rem;
     --tny-font: 1.5rem;
+    --dot-font: 1.2rem;
     --def-font: 1rem;
     --pop-font: 'Indie Flower', cursive;
     --def-font-fam: 'Roboto', sans-serif; 
@@ -41,10 +42,12 @@ article {
     flex-flow: row wrap;
     align-items: flex-start;
     margin: auto;
+    width: 100%;
 }
 
 h1, h2, h3, h4 {
     font-family: var(--pop-font);
+    width: 100%
 }
 
 h1 {
@@ -63,6 +66,129 @@ h4 {
     font-size: var(--tny-font);
 }
 
+h5 {
+    font-size: var(--dot-font);
+}
+
 p {
     font-size: inherit;
+    margin: auto;
+    width: 100%;
+    padding: 2%;
+}
+
+ol {
+    font-size: inherit;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+li {
+    font-size: inherit;
+    margin: auto;
+    width: 100%
+}
+
+header {
+    margin: auto;
+    padding: 1%;
+    width: 100%;
+}
+
+header h1 {
+    width: 70%;
+    margin: auto;
+}
+
+main {
+    margin: auto;
+    padding: 1%;
+    width: 100%;
+}
+
+footer {
+    margin: auto;
+    padding: 1%;
+    width: 100%;
+}
+
+footer article {
+    width: 60%;
+    margin: auto;
+}
+
+/* components */
+
+.intro {
+    border-style: dashed;
+    border-width: thin;
+    border-radius: 10px;
+    padding: 1S%;
+    width: 60%;
+}
+
+#unicorn-me {
+    font-size: var(--tny-font);
+    margin: auto;
+    padding: 5%;
+}
+
+button {
+    background: #eee;
+    border-radius: 10px;
+    border-color: #eee;
+    border-width: thin;
+    padding: 2%;
+    margin: auto;
+    margin-top: 5%;
+    font-size: var(--tny-font);
+}
+
+.shareFallback button {
+    background: none;
+    border-radius: 10px;
+    border-color: #7121b3;
+    color: #7121b3;
+    margin: 1%;
+}
+
+.shareFallback .notification {
+    color: #fff;
+    padding: 1%;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+.green {
+    background: #2ecc71;
+}
+
+.blue {
+    background: #3498db
+}
+
+input {
+    width: 70%;
+    height: auto;
+    font-size: var(--tny-font);
+    border-style: none;
+    background: darkorchid;
+    color: #fff;
+    margin: 2%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.nameModal {
+    margin: auto;
+    margin-top: 5%;
+    padding: 5%;
+    background: #eee;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+} 
+
+.nameModal h1 {
+    text-align: center;
+    margin: auto;
 }

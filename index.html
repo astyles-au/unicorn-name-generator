@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="css/styles.css">
 
+    <!-- clipboard JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
+
     <!-- development version, includes helpful console warnings -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
 
@@ -23,7 +26,7 @@
     <header>
         <section>
             <article>
-                <h1>Welcome to the unicorn generator 🦄</h1>
+                <h1>🦄 Unicorn me</h1>
             </article>
         </section>
     </header>
@@ -31,6 +34,21 @@
     <main>
 
         <section>
+
+            <article class="intro">
+                <p>Welcome to unicorn me, a nifty little unicorn name generator</p>
+
+                <p><strong>Start the magic:</strong></p>
+
+                <ol>
+                    <li>Type in your first name</li>
+                    <li>Press button</li>
+                    <li>Share your magic new unicorn name with the world</li>
+                </ol>
+
+            </article>
+
+
             <article>
                 <!-- unicorn name generator component added here soon -->
                 <div id="unicorn-me">
@@ -40,6 +58,7 @@
                 </div>
 
             </article>
+
         </section>
 
     </main>
@@ -48,9 +67,9 @@
     <footer>
         <section>
             <article>
-                <h4>
+                <h5>
                     Built using <a href="https://vuejs.org/v2/">Vue JS 2 ⚙️</a>, find me on <a href="https://twitter.com/thelibstyles">Twitter: thelibstyles 🤙 </a>
-                </h4>
+                </h5>
             </article>
         </section>
 
