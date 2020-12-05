@@ -10,3 +10,6 @@ This repo will use an input value to create your unique unicorn name. A share fe
 * Share api https://developer.mozilla.org/en-US/docs/Web/API/Navigator/share
 * Clipboard JS https://clipboardjs.com/
 
+## Demo:
+[https://friendly-booth-089be7.netlify.app/](https://friendly-booth-089be7.netlify.app/)
+
