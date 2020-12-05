@@ -9,6 +9,7 @@ const app = Vue.component('unicorn-me', {
         return {
             // test: 'Vue js component loaded ok! 😀'
             nameInput: '',
+            nameOuput: '',
             nameInputShow: true,
             nameCopied: false,
             nameModal: false,
@@ -23,7 +24,12 @@ const app = Vue.component('unicorn-me', {
         buildName: function () {
             this.nameInputShow = false
             this.nameModal = true
-            console.log(this.nameInput);
+
+            // generate random unicorn name based on supplied name
+            let mixItUP = this.nameInput + 'CheeseSparkle'
+            this.nameOutput = mixItUP;
+
+            console.log(this.nameOutput);
         },
 
         shareMe: function () {
@@ -34,7 +40,7 @@ const app = Vue.component('unicorn-me', {
                 console.log('You can share your name using phone API!');
                 navigator.share({
                     title: 'I have a unicorn name, get your own!',
-                    text: 'My Unicorn name is 🦄 ' + this.nameInput,
+                    text: 'My Unicorn name is 🦄 ' + this.nameOutput,
                     url: '#'
                   });
 
@@ -43,7 +49,6 @@ const app = Vue.component('unicorn-me', {
                 console.log('You can share your name using copy paste!');
                 this.shareButton = false
                 this.shareFallback = true;
-
               }
         },
 
@@ -53,7 +58,7 @@ const app = Vue.component('unicorn-me', {
 
         nameCopiedNotification: function() {
             this.nameCopied = true;
-        }
+        },
 
     },
 
@@ -68,7 +73,7 @@ template: `
 
     <div class="nameModal" v-show="nameModal">
     <!-- Target -->
-    <h1 id="foo">🦄 {{nameInput}}</h1>
+    <h1 id="foo">🦄 {{nameOutput}}</h1>
     <button v-on:click="shareMe" v-show="shareButton">🎉 Share this!</button>
 
 
