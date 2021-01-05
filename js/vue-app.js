@@ -206,7 +206,7 @@ const app = Vue.component('unicorn-me', {
                 'combatant',
                 'contender',
                 'contester',
-                'dark horse',s
+                'dark horse',
                 'favorite',
                 'hopeful',
                 'rival',
