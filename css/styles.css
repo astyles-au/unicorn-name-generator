@@ -98,7 +98,7 @@ header {
 }
 
 header h1 {
-    width: 70%;
+    width: 50%;
     margin: auto;
 }
 
@@ -125,7 +125,7 @@ footer article {
     border-style: dashed;
     border-width: thin;
     border-radius: 10px;
-    padding: 1S%;
+    padding: 1%;
     width: 60%;
 }
 
@@ -146,11 +146,11 @@ footer article {
 #unicorn-me {
     font-size: var(--tny-font);
     margin: auto;
-    padding: 5%;
+    /* padding: 5%; */
 }
 
 button {
-    background: #eee;
+    background: #04d9ff;
     border-radius: 10px;
     border-color: #eee;
     border-width: thin;
@@ -175,6 +175,16 @@ button {
     border-radius: 10px;
 }
 
+.bg-pattern-stripe {
+  background: repeating-linear-gradient(
+  45deg,
+  #606dbc,
+  #2ecc71 10px,
+  #465298 10px,
+  #3498db 20px
+);
+}
+
 .green {
     background: #2ecc71;
 }
@@ -184,7 +194,7 @@ button {
 }
 
 input {
-    width: 70%;
+    width: auto;
     height: auto;
     font-size: var(--tny-font);
     border-style: none;

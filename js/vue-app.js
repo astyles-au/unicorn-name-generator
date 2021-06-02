@@ -22,6 +22,12 @@ const app = Vue.component('unicorn-me', {
     methods: {
 
         buildName: function () {
+
+            // remove intro container on name generation load
+            document.getElementById('intro').remove();
+            document.getElementById('appHeading').remove();
+
+            // default variables
             this.nameInputShow = false
             this.nameModal = true
 
