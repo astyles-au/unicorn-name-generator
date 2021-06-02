@@ -130,9 +130,35 @@ footer article {
     margin-bottom: 5%;
 }
 
+/* mobile view port media query rules */
 @media only screen and (max-width: 600px) {
+
+    #appHeading {
+        margin: auto;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+
+    button {
+        margin-left: 12% !important;
+    }
+
+    h1 {
+        font-size: var(--med-font);
+        width: auto !important;
+    }
+
     .intro {
       width: 90%;
+    }
+
+    label {
+        text-align: center;
+        margin-left: 12%;
+    }
+
+    input {
+        margin-left: 12% !important;
     }
 
     .nameModal {
@@ -142,12 +168,17 @@ footer article {
     .nameModal h1 {
             font-size: var(--med-font) !important;
     }
+
+    #unicorn-me {
+        font-size: var(--tny-font);
+        margin: auto;
+        margin-top: 5%;
+    }
   }
 
 #unicorn-me {
     font-size: var(--tny-font);
     margin: auto;
-    /* padding: 5%; */
 }
 
 button {
