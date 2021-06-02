@@ -192,6 +192,13 @@ button {
     font-size: var(--tny-font);
 }
 
+button:hover {
+    border-color: #7121b3;
+    border-width: 5px;
+    zoom: 101%;
+    transition: ease-in;
+}
+
 .shareFallback button {
     background: none;
     border-radius: 10px;

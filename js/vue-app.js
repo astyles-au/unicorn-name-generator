@@ -266,7 +266,7 @@ const app = Vue.component('unicorn-me', {
 
     <div v-show="nameInputShow">
     <label>Enter your first name:</label>
-    <input type="text" v-model="nameInput">
+    <input type="text" v-model="nameInput" maxlength="20">
     <button v-on:click="buildName">Create magic!</button>
     </div>
 
