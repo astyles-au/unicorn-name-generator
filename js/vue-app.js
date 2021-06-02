@@ -26,6 +26,7 @@ const app = Vue.component('unicorn-me', {
             // remove intro container on name generation load
             document.getElementById('intro').remove();
             document.getElementById('appHeading').remove();
+            document.getElementById('bgTarget').classList.add('bg-pattern-stripe');
 
             // default variables
             this.nameInputShow = false

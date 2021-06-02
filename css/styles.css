@@ -211,9 +211,9 @@ button {
   background: repeating-linear-gradient(
   45deg,
   #606dbc,
-  #2ecc71 10px,
-  #465298 10px,
-  #3498db 20px
+  #2ecc71 20px,
+  #465298 20px,
+  #3498db 30px
 );
 }
 
