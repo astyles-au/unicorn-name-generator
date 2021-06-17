@@ -13,3 +13,6 @@ This repo will use an input value to create your unique unicorn name. A share fe
 ## Demo:
 [https://friendly-booth-089be7.netlify.app/](https://friendly-booth-089be7.netlify.app/)
 
+Add any issues, so i can improve the magic! 
+👍
+
