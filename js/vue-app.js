@@ -226,7 +226,7 @@ const app = Vue.component('unicorn-me', {
             console.log(randomWords(items2));
             console.log(randomWords(items3));
 
-            let mixItUP = this.nameInput + '' + randomWords(items1) + ' the ' + randomWords(items2) + ' ' + randomWords(items3)
+            let mixItUP = this.nameInput + ' ' + randomWords(items1) + ' the ' + randomWords(items2) + ' ' + randomWords(items3)
             this.nameOutput = mixItUP;
             console.log(this.nameOutput);
         },
@@ -240,7 +240,7 @@ const app = Vue.component('unicorn-me', {
                 navigator.share({
                     title: 'I have a unicorn name, get your own!',
                     text: 'My Unicorn name is 🦄 ' + this.nameOutput,
-                    url: 'https://friendly-booth-089be7.netlify.app'
+                    url: '#'
                 });
 
             } else {
