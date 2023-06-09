@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta property="og:title" content="Unicorn name generator" />
-    <meta property="og:description" content=">Welcome to unicorn me, a nifty little unicorn name generator" />
+    <meta
+      property="og:description"
+      content=">Welcome to unicorn me, a nifty little unicorn name generator"
+    />
     <meta property="og:image" content="unicorn-3637428_1280.png" />
 
     <title>Unicorn name generator</title>
 
     <!-- google fonts - roboto and Indieflower -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Animate css CDN v4.1.1 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 
     <!-- clipboard JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script>
@@ -28,63 +35,46 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js" defer></script>
 
     <script src="js/vue-app.js" defer></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <section>
-            <article id="appHeading">
-                <h1>
-                    <span>🦄</span> Unicorn me</h1>
-            </article>
-        </section>
+      <section>
+        <article id="appHeading">
+          <h1><span>🦄</span> Unicorn me</h1>
+        </article>
+      </section>
     </header>
 
     <main id="bgTarget">
+      <section style="margin-bottom: 5%">
+        <article class="intro" id="intro">
+          <p>Welcome to unicorn me, a nifty little unicorn name generator</p>
 
-        <section style="margin-bottom: 5%;">
+          <p><strong>Start the magic:</strong></p>
 
-            <article class="intro" id="intro">
-                <p>Welcome to unicorn me, a nifty little unicorn name generator</p>
+          <ol>
+            <li>Type in your first name</li>
+            <li>Press button</li>
+            <li>Share your magic new unicorn name with the world</li>
+          </ol>
+        </article>
 
-                <p><strong>Start the magic:</strong></p>
-
-                <ol>
-                    <li>Type in your first name</li>
-                    <li>Press button</li>
-                    <li>Share your magic new unicorn name with the world</li>
-                </ol>
-
-            </article>
-
-
-            <article>
-                <!-- unicorn name generator component added here soon -->
-                <div id="unicorn-me">
-
-                    <unicorn-me></unicorn-me>
-
-                </div>
-
-            </article>
-
-        </section>
-
+        <article>
+          <!-- unicorn name generator component added here soon -->
+          <div id="unicorn-me">
+            <unicorn-me></unicorn-me>
+          </div>
+        </article>
+      </section>
     </main>
 
-
     <footer>
-        <section>
-            <article>
-                <h5>
-                    Built using <a href="https://vuejs.org/v2/">Vue JS 2 ⚙️</a>
-                </h5>
-            </article>
-        </section>
-
+      <section>
+        <article>
+          <h5>Built using <a href="https://vuejs.org/v2/">Vue JS 2 ⚙️</a></h5>
+        </article>
+      </section>
     </footer>
-
-</body>
-
+  </body>
 </html>
