@@ -10,7 +10,7 @@ This repo will use an input value to create your unique unicorn name. A share fe
 * Clipboard JS https://clipboardjs.com/
 
 ## Demo:
-...
+https://lucky-vacherin-a1608b.netlify.app/
 
 Add any issues, so i can improve the magic! 
 👍
